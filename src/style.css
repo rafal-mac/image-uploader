@@ -1,9 +1,75 @@
+html,
 body {
-  font-family: "Poppins", sans-serif;
+  height: 100%;
+  font-weight: 500;
 }
 
-#drop_zone {
-  border: 5px solid blue;
-  width:  200px;
-  height: 100px;
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 10%;
+}
+
+.wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 36px 32px 36px 32px;
+}
+
+.upload-title {
+  font-size: 18px;
+}
+
+.upload-subtitle {
+  font-size: 10px;
+}
+
+.upload-choice {
+  font-size: 12px;
+}
+
+.drop-zone {
+  background: #F6F8FB;
+  border: 1px dashed #97BEF4;
+  border-radius: 12px;
+  margin: 15px 0 18px;
+  font-size: 12px;
+  color: #BDBDBD;
+  padding: 40px 90px;
+}
+
+.drop-zone-image {
+  margin-bottom: 35px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #2F80ED;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #FFFFFF;
+  border: none;
+}
+
+#progress_bar {
+  width: 100%;
+  background: #F2F2F2;
+  border-radius: 8px;
+}
+
+#current_progress {
+  width: 1%;
+  background: #2F80ED;
+  height: 6px;
+  border-radius: 8px;
+}
+
+.success-image {
+  border-radius: 12px;
+  margin: 15px 0 18px;
 }

@@ -30,15 +30,18 @@ const uploadFile = (file) => {
 
   uploadTask.on("state_changed",
     (snapshot) => {
+      toggleBetweenElements('upload_wrapper', 'loading_wrapper');
       const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-      document.getElementById('progress').innerHTML = progress;
+      document.getElementById('current_progress').style.width = `${progress}%`;
     },
     (error) => {
       alert(error);
     },
     () => {
       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-        document.getElementById('url').innerHTML = downloadURL;
+        toggleBetweenElements('loading_wrapper', 'success_wrapper');
+        document.getElementById('success_image').src = downloadURL;
+        document.getElementById('download_url').value = downloadURL;
       });
     }
   );
@@ -68,3 +71,24 @@ const handleDragover = (e) => {
   e.preventDefault();
 }
 document.getElementById('drop_zone').ondragover = handleDragover;
+
+const handleCopyLink = () => {
+  const copyLink = document.getElementById('download_url');
+
+  copyLink.select();
+  copyLink.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(copyLink.value);
+}
+document.getElementById('copy_link_button').onclick = handleCopyLink;
+
+const toggleBetweenElements = (id1, id2) => {
+  const elementToHide = document.getElementById(id1)
+  const elementToShow = document.getElementById(id2)
+
+  elementToHide.classList.remove('d-flex');
+  elementToHide.classList.add('d-none');
+
+  elementToShow.classList.remove('d-none');
+  elementToShow.classList.add('d-flex');
+}

@@ -11,18 +11,61 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
   <title>Image Uploader</title>
 </head>
 
-<body>
-  <div id="drop_zone">
-    <p>Drag & Drop your image here</p>
+<body class="d-flex flex-column">
+  <div id="upload_wrapper" class="wrapper m-auto d-flex flex-column align-items-center">
+    <p class="upload-title">
+      Upload your image
+    </p>
+
+    <p class="upload-subtitle">
+      File should be Jpeg, Png...
+    </p>
+
+    <div id="drop_zone" class="drop-zone d-flex flex-column align-items-center">
+      <img src="../src/image.svg" width="115" title="upload background" class="drop-zone-image" />
+      Drag & Drop your image here
+    </div>
+
+    <p class="upload-choice">
+      Or
+    </p>
+
+    <label for="upload" class="button">
+      Choose a file
+      <input type='file' title="upload" id="upload" />
+    </label>
   </div>
 
-  <input type='file' title="upload" id="upload" />
-  <p id="progress"></p>
-  <p id="url"></p>
+  <div id="loading_wrapper" class="w-100 wrapper m-auto d-none flex-column">
+    <p>Uploading...</p>
+    <div id="progress_bar">
+      <div id="current_progress"></div>
+    </div>
+  </div>
 
+  <div id="success_wrapper" class="wrapper m-auto d-none flex-column align-items-center">
+    <img src="../src/success.png" height="35" title="success" />
+    <p class="upload-title">
+      Uploaded Successfully!
+    </p>
+
+    <img id="success_image" class="success-image" height="225" title="success image">
+
+    <div class="input-group mb-3">
+      <input title="download url" value="alkhabdslfjhabflajh" id="download_url" class="form-control">
+      <button id="copy_link_button" type="button" class="button">Copy link</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
   <script src="bundle.js"></script>
 </body>
 
