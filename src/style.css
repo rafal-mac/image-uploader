@@ -15,6 +15,7 @@ body {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 36px 32px 36px 32px;
+  max-width: 90%;
 }
 
 .upload-title {
@@ -36,7 +37,13 @@ body {
   margin: 15px 0 18px;
   font-size: 12px;
   color: #BDBDBD;
-  padding: 40px 90px;
+  padding: 40px 70px;
+  width: 90%;
+}
+
+.drop-zone span {
+  width: 90%;
+  
 }
 
 .drop-zone-image {
@@ -73,8 +80,4 @@ input[type="file"] {
 .success-image {
   border-radius: 12px;
   margin: 15px 0 18px;
-}
-
-#loading_wrapper {
-  max-width: 80%;
 }
