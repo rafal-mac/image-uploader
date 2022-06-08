@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Image Uploader</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,12 +8,8 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://image-uploader-e8b12.web.app">
       Demo
-    </a>
-    <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
-      Solution
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx">
@@ -39,20 +35,15 @@
 
 ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+See the working demo of the project at https://image-uploader-e8b12.web.app
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+Working on this application was a great reminder of how pure javascript works and allowed me to play with webpack config for the first time. Developing without a framework like Vue or React was challenging but also very refreshing.
+
+I learnt the basics of the Firebase ecosystem, especially Cloud Storage and Hosting. As well as the principles of bundling.
 
 ### Built With
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+The app was built with pure HTML, CSS + Javascript without any frameworks and bundled using bootstrap. For file uploads and storage I used Firebase Cloud Storage and for hosting and deployments - Firebase Hosting and GitHub Actions. I also used Bootstrap 5 to aid styling.
 
 ## Features
 
@@ -77,16 +68,8 @@ $ npm install
 $ npm start
 ```
 
-## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example -->
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [your-website.com](https://rafal-mac.netlify.com)
+- GitHub [@your-username](https://github.com/rafal-mac/)
+- Twitter [@your-twitter](https://twitter.com/heblushed)
