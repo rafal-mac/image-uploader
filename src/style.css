@@ -1,13 +1,13 @@
 html,
 body {
   height: 100%;
+  width: 100%;
+  margin: 0;
   font-weight: 500;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .wrapper {
@@ -73,4 +73,8 @@ input[type="file"] {
 .success-image {
   border-radius: 12px;
   margin: 15px 0 18px;
+}
+
+#loading_wrapper {
+  max-width: 80%;
 }
